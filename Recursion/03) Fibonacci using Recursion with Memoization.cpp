@@ -10,7 +10,7 @@ int Fib(int *ptr, int n)
     return ptr[n];
   }
 
-  ptr[n] = Fib(ptr, n-1) + Fib(ptr, n-2); //recursion call
+  ptr[n] = Fib(ptr, n-1) + Fib(ptr, n-2); //recursion call & memoization
   return ptr[n];
 }
 int main()
